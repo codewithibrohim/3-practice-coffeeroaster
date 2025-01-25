@@ -5,54 +5,54 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/fraunces-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  /* fraunces-900 - latin */
-  @font-face {
+}
+
+/* fraunces-900 - latin */
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     src: url('../fonts/fraunces-v32-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
-  /* barlow-regular - latin */
+/* barlow-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  /* barlow-500 - latin */
-  @font-face {
+}
+
+/* barlow-500 - latin */
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
     src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  /* barlow-600 - latin */
-  @font-face {
+}
+
+/* barlow-600 - latin */
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  /* barlow-700 - latin */
-  @font-face {
+}
+
+/* barlow-700 - latin */
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  
+}
+
+
 
 
 
@@ -60,64 +60,64 @@
 
 /* ROOT */
 :root {
- /* colors */
- --color-primary: #333D4B;
- --color-secondary: #FEFCF7;
- /* backgrounds */
- --bg-primary: #0E8784;
- --bg-secondary: #66D2CF;
- /* fonts */
- --font-primary: "Fraunces", serif;
- --font-secondary: "Barlow" , sans-serif;
- --font-weight: 900;
- --font-weight-secondary: 700;
- --font-size: 12px;
+    /* colors */
+    --color-primary: #333D4B;
+    --color-secondary: #FEFCF7;
+    /* backgrounds */
+    --bg-primary: #0E8784;
+    --bg-secondary: #66D2CF;
+    /* fonts */
+    --font-primary: "Fraunces", serif;
+    --font-secondary: "Barlow" , sans-serif;
+    --font-weight: 900;
+    --font-weight-secondary: 700;
+    --font-size: 12px;
 }
 
 * {
- margin: 0;
- padding: 0;
- scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 html {
- height: 100%;
- scroll-behavior: inherit;
+    height: 100%;
+    scroll-behavior: inherit;
 }
 
 body {
- display: flex;
- flex-direction: column;
- height: 100%;
- font-family: var(--font-primary);
- font-weight: var(--font-weight);
- background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight);
+    background-color: var(--color-secondary);
 }
 
 main {
- flex-grow: 1;
+    flex-grow: 1;
 }
 
 .container {
- width: 100%;
- max-width: 1340px;
- margin: 0 auto;
- padding: 0 25px;
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 25px;
 }
 
 img {
- max-width: 100%;
- height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 ul,
 ol {
- list-style: none;
+    list-style: none;
 }
 
 a {
- text-decoration: none;
- background-color: transparent;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .site-header{
@@ -160,6 +160,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 8px;
 }
 .hero__wrapper-box{
     margin: 0 auto;
@@ -205,7 +206,7 @@ a {
 .collection__title{
     margin: 0 ;
     text-align: center;
-    padding-bottom: 13px;
+    padding: 20px 0;
     font-size: 40px;
     line-height: 72px;
     color: #979797;
@@ -248,7 +249,95 @@ a {
     color: var(--color-primary);
 }
 
-@media only screen and (min-width: 600px){
+.service{
+    padding-bottom: 600px;
+}
+.service__list-box{
+    position: relative;
+}
+.service__wrapper{
+    padding-top: 65px;
+    padding-bottom: 660px;
+    border-radius: 10px;
+    background-color: #2C343E;
+}
+.service__info-box{
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 280px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+.service__title{
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 28px;
+    line-height: 28px;
+}
+.service__desc{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.8;
+}
+.service__list{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.service__list-item{
+    padding-top: 72px;
+    padding-bottom: 51px;
+    width: 100%;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-secondary);
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+}
+.service__list-item__img{
+    padding-bottom: 56px;
+}
+.service__list-item-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 255px;    
+    text-align: center;
+}
+.service__list-item__title{
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.service__list-item__desc{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 212px;
+}
+
+.service__list-item__img-box{
+    width: 100%;
+    max-width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+@media only screen and (min-width: 730px){
     .site-header__nav{
         display: block;
     }
@@ -295,8 +384,42 @@ a {
     .collection__item-info{
         text-align: left;
     }
+    .service{
+        padding-bottom: 290px;
+    }
+    .service__wrapper{
+        padding-bottom: 368px;
+    }
+    .service__info-box{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+    .service__list-item{
+        flex-direction: row;
+        max-width: 573px;
+        padding: 41px 0;
+        padding-left: 70px;
+        gap: 55px;
+    }
+    .service__list-item__img{
+        padding: 0;
+    }
+    .service__list-item-info{
+        max-width: 344px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .service__list-item__desc{
+        max-width: 344px;
+    }
+    .service__list-item__title{
+        padding-bottom: 16px;
+    }
+    .service__list{
+        top: 70px;
+    }
 }
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1115px){
     .hero__wrapper{
         background-image: url("../images/hero-desktop-bg-img.jpg");
     }
@@ -319,6 +442,36 @@ a {
     }
     .collection__item-info{
         text-align: center;
-        max-width: 255px;
+        max-width: 240px;
+    }
+    .collection__title{
+        font-size: 150px;
+    }
+    .service{
+        padding-bottom: 151px;
+    }
+    .service__wrapper{
+        padding-bottom: 316px;
+    }
+    .service__list{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .service__list-item{
+        flex-direction: column;
+        max-width: 350px;
+        /* height: 382px; */
+        padding-top: 72px;
+        padding-bottom: 48px;
+        padding-left: 0;
+    }
+    .service__list-item-info{
+        width: 100%;
+        max-width: 255px;    
+        text-align: center;
+        align-items: center;
+    }
+    .service__list-item__title{
+        padding-bottom: 24px;
     }
 }
